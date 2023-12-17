@@ -21,7 +21,7 @@ endfunction()
 
 if (USE_WCH_TOOLCHAIN)
   message("** force wch toolchain")
-  find_toolchain("riscv-none-embed-")
+  find_toolchain("riscv-none-elf-")
 elseif(CMAKE_C_COMPILER)
   message("** use cmake toolchain")
   string(REGEX REPLACE "\-gcc$" "-objdump" CROSS_OBJDUMP "${CMAKE_C_COMPILER}")
@@ -31,7 +31,7 @@ else()
   find_toolchain("riscv-none-elf-" "riscv-none-embed-")
 endif()
 
-set(CPU_FLAGS "-march=rv32imac -mabi=ilp32 -mcmodel=medany -msmall-data-limit=8 -mno-save-restore")
+set(CPU_FLAGS "-march=rv32imac_zicsr_zifencei -mabi=ilp32 -mcmodel=medany -msmall-data-limit=8 -mno-save-restore")
 
 set(COMMON_FLAGS "-fdata-sections -ffunction-sections")
 
