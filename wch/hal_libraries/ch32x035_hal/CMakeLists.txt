@@ -1,0 +1,42 @@
+target_sources(${TARGET_ELF} PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_adc.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_awu.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_dbgmcu.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_dma.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_exti.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_flash.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_gpio.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_i2c.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_iwdg.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_misc.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_opa.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_pwr.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_rcc.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_spi.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_tim.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_usart.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/source/ch32x035_wwdg.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_adc.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_awu.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_dbgmcu.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_dma.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_exti.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_flash.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_gpio.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_i2c.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_iwdg.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_misc.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_opa.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_pwr.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_rcc.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_spi.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_tim.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_usart.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_usb.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_usbpd.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035_wwdg.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/PIOC_SFR.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/ch32x035.h
+)
+
+target_include_directories(${TARGET_ELF} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
