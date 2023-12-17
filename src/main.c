@@ -1,3 +1,10 @@
+/*
+ *@Note
+ *USART1_Tx(PB10) is used as a print debug port output
+ *GPIO pins PA0 and PA1 are toggling
+ *
+ */
+
 #include "ch32x035.h"
 #include "debug.h"
 
